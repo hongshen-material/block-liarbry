@@ -1,0 +1,33 @@
+{
+  "name": "@hongshen/materials-library",
+  "version": "0.1.0",
+  "description": "This is a ice material project",
+  "author": "abeil",
+  "scripts": {
+    "deploy": "npm run generate && npm run sync",
+    "generate": "iceworks generate",
+    "sync": "iceworks sync",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss",
+    "prepublishOnly": "npm run generate"
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@ice/screenshot": "^0.1.1",
+    "@ice/spec": "^1.0.1",
+    "eslint": "^6.0.1",
+    "stylelint": "^13.1.0"
+  },
+  "materialConfig": {
+    "template": "@icedesign/ice-react-material-template",
+    "type": "react",
+    "fusion-site": {
+      "id": 15773,
+      "name": "管理系统",
+      "url": "https://fusion.design/api/v1/sites/15773/materials"
+    }
+  }
+}

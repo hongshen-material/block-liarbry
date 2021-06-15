@@ -1,0 +1,56 @@
+{
+  "name": "echart-ratio-01",
+  "version": "0.1.2",
+  "description": "charts ratio fusion block",
+  "files": [
+    "src/",
+    "build/",
+    "screenshot.png"
+  ],
+  "keywords": [
+    "ice",
+    "react",
+    "block"
+  ],
+  "scripts": {
+    "start": "build-scripts start",
+    "build": "build-scripts build",
+    "screenshot": "screenshot -l -s mountNode",
+    "prepublishOnly": "npm run build && npm run screenshot"
+  },
+  "dependencies": {
+    "echarts": "^5.0.2",
+    "echarts-for-react": "^3.0.1",
+    "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "@alib/build-scripts": "^0.1.8",
+    "@ice/screenshot": "^0.1.1",
+    "build-plugin-block": "^1.0.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "blockConfig": {
+    "name": "MyFirstBlock",
+    "title": "MyFirstBlock",
+    "category": "Chart",
+    "views": [
+      {
+        "title": "",
+        "props": {},
+        "screenshot": "build/views/block_view1.png",
+        "html": "build/views/block_view1.html"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba-fusion/materials/tree/master/blocks/FlowForm"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
